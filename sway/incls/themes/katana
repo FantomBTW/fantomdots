@@ -1,0 +1,26 @@
+###there all eye-candy/output confs such as wallpapers, swayfs features etc
+
+#waybar
+exec waybar -s /home/fantom/.config/waybar/themes/katana
+
+#wallpapers
+output * background ~/media/wallpapers/katana.png fill
+
+#gaps
+gaps inner 20
+gaps outer 10
+
+#border size
+default_border pixel 3
+
+#border colors border	bordtop	text	newwin acceleration
+client.focused #45475A	#45475A	#ffffff	#7E8198	
+
+
+#radiuses
+corner_radius 12
+smart_corner_radius enable
+
+#borders only when more than 1 window
+smart_borders on
+

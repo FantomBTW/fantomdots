@@ -24,12 +24,12 @@ require"comm"
 vim.cmd('syntax enable')
 vim.cmd('set background=dark')
 
---vim.cmd('colorscheme tokyonight')
+vim.cmd('colorscheme tokyonight')
 --vim.cmd('colorscheme catppuccin')
-vim.cmd('colorscheme gruvbox')
+--vim.cmd('colorscheme gruvbox')
 
 require('tokyonight').setup({
-	style = "storm", -- storm day moon night
+	style = "moon", -- storm day moon night
 })
 
 --прозрачность, наврное

@@ -1,0 +1,27 @@
+###there all eye-candy/output confs such as wallpapers, swayfx features etc
+
+#waybar
+exec waybar -s /home/fantom/.config/waybar/themes/rem
+
+#wallpapers
+output * background ~/media/wallpapers/rem.jpg fill
+
+#gaps
+gaps inner 20
+gaps outer 10
+
+#border size
+default_border pixel 1
+
+#border colors 	border	bordtop	text	newwin acceleration
+client.focused 	#F9FAFA	#99C9FA	#000000	#9EB7D7	
+
+
+#radiuses
+corner_radius 12
+smart_corner_radius enable
+
+#borders only when more than 1 window
+smart_borders on
+
+for_window [app_id="waybar"] border pixel 10

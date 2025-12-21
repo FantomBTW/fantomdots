@@ -1,7 +1,3 @@
-@define-color 	acc 	#d9b6c9;
-@define-color 	bg 	#585B70;
-
-
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -13,9 +9,8 @@
    }
 
    .module {
-       /*color: #e6d3d5;*/
-       color: @acc;
-       background-color: transparent;
+       color: #CDC88C;
+       background-color: transparent;/*rgba(50, 110, 180, 0.5); / Серо-синий цвет фона */
        border-radius: 20px; /* Радиус закругления углов */
        padding: 2px; /* Внутренний отступ */
        margin: 5px; /* Внешний отступ */
@@ -27,7 +22,7 @@
 
 
 window#waybar {
-    background-color: transparent;/*rgba(43, 48, 59, 0.5);*/
+    background-color: transparent;
     border-bottom: 0px solid rgba(100, 114, 125, 0.5);
     transition-property: background-color;
     transition-duration: .5s;
@@ -80,7 +75,7 @@ button:hover {
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: @acc;
+    color: #CDC88C;
     border-radius: 20px;
 }
 
@@ -89,7 +84,7 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: @bg;
+    background-color: #43433D;
 }
 
 #workspaces button.urgent {

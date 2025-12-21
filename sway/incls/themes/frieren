@@ -1,0 +1,25 @@
+###there all eye-candy/output confs such as wallpapers, swayfs features etc
+
+#waybar
+exec waybar -s /home/fantom/.config/waybar/themes/frieren
+
+#wallpapers
+output * background ~/media/wallpapers/frieren.png fill
+
+#gaps
+gaps inner 20
+gaps outer 10
+
+#border size
+default_border pixel 3
+
+#border colors border	bordtop	text	newwin acceleration
+client.focused #CDC88C	#CDC88C	#ffffff	#CDC88C	
+
+
+#radiuses
+corner_radius 12
+smart_corner_radius enable
+
+#borders only when more than 1 window
+smart_borders on

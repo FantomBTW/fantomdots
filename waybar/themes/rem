@@ -1,74 +1,55 @@
-@define-color 	acc 	#d9b6c9;
-@define-color 	bg 	#585B70;
+@define-color 	acc 	#99C9FA;
+@define-color 	bg 	#F9FAFA;
 
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
+    min-height: 20px;
+    border-radius: 20px;
 }
 
    #bar {
-       background-color: transparent; /* Установите цвет фона для панели при необходимости */
+       /*background-color: #F9FAFA;  Установите цвет фона для панели при необходимости */
    }
 
    .module {
-       /*color: #e6d3d5;*/
-       color: @acc;
-       background-color: transparent;
+       color: @bg;
+       background-color: @acc;
        border-radius: 20px; /* Радиус закругления углов */
        padding: 2px; /* Внутренний отступ */
        margin: 5px; /* Внешний отступ */
-       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень (по желанию) */
+       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Тень (по желанию) */
    }
    
 
-   
-
-
 window#waybar {
-    background-color: transparent;/*rgba(43, 48, 59, 0.5);*/
-    border-bottom: 0px solid rgba(100, 114, 125, 0.5);
-    transition-property: background-color;
-    transition-duration: .5s;
-}
+    background-color: @bg;
+    border-radius: 10px;
+    border-color: @acc;
+    border: 2px solid shade(@acc, 0.8);
+}    
 
 window#waybar.hidden {
     opacity: 0.1;
 }
-
-
-window#waybar.empty {
-    background-color: transparent;
-}
-/*
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-
 window#waybar.termite {
     background-color: #3F3F3F;
 }
 
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
-
 button {
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    /*box-shadow: inset 0 -3px transparent;*/
     /* Avoid rounded borders under each button name */
-    border: none;
-    border-radius: 0;
+    border: 1px;
+    border-radius: 1;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #000000;
+    /*box-shadow: inset 0 -3px #000000;*/
 }
 
 /* you can set a style on hover for any module like this 
@@ -79,8 +60,7 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
-    color: @acc;
+    color: @bg;
     border-radius: 20px;
 }
 
@@ -124,7 +104,7 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 2px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -135,32 +115,6 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#custom-launcher {
-}
-
-#clock {
-    background-color: transparent;
-}
-
-.module-clock {
-    background-color: transparent;
-}
-
-#battery {
-    background-color: transparent;
-}
-
-#battery.charging, #battery.plugged {
-    background-color: transparent;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
@@ -207,27 +161,6 @@ label:focus {
     background-color: #964B00;
 }
 
-#backlight {
-    background-color: transparent;
-}
-
-#network {
-    background-color: transparent;
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
-}
-
-#pulseaudio {
-    background-color: transparent;
-}
-
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
 #wireplumber {
     background-color: #fff0f5;
     color: #000000;
@@ -257,10 +190,6 @@ label:focus {
 
 #temperature.critical {
     background-color: #eb4d4b;
-}
-
-#tray {
-    background-color: transparent;
 }
 
 #tray > .passive {
@@ -299,7 +228,6 @@ label:focus {
 }
 
 #language {
-    background: transparent;
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;

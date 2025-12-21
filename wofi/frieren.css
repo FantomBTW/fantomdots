@@ -1,0 +1,29 @@
+window {
+    margin: 9px;
+    border: 2px solid;
+    border-color: transparent;
+    background-color: #282828;
+    border-radius: 10px;
+    font-family: "monospace";
+    font-size: 19px;
+}
+
+#input {
+    margin: 8px;
+}
+
+#outer-box {
+    margin: 3px;
+    border-radius: 8px;
+}
+
+#text:selected {
+    margin: 0px 5px;
+    color:#cdc88c
+}
+
+#entry:selected {
+    border-radius: 9px;
+    background-color: #615f53;
+}
+

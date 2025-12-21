@@ -1,6 +1,6 @@
 @define-color bg #3F4053;
 @define-color fg #D5B6C9;
-@define-color y #CCA5BA;
+@define-color c #CCA5BA;
 
 window {
     border: none;
@@ -51,7 +51,7 @@ window {
 #entry:selected {
     padding: 0px 10px;
     margin: 0px 10px;
-    background-color: @y;
+    background-color: @c;
     border-radius: 5px;
     border: none;
 }

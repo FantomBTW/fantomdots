@@ -1,0 +1,7 @@
+exec {
+	swaync
+	--no-startup-id swaymsg "workspace 10; exec Telegram; workspace 1"
+	#--no-startup-id swaymsg "workspace 9; exec kitty "cmus"; workspace 1"
+	#--no-startup-id swaymsg "workspace 8; exec steam; workspace 1"
+	wl-paste --watch cliphist store
+}

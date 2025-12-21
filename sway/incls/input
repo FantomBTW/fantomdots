@@ -1,0 +1,21 @@
+# Input configuration
+input type:touchpad {
+    	dwt enabled
+    	tap enabled
+    	natural_scroll disabled
+    	middle_emulation enabled
+}
+   
+input type:keyboard {
+    	xkb_layout us,ru
+    	xkb_options grp:alt_shift_toggle
+    	repeat_delay 200
+    	repeat_rate 33
+}
+   
+input type:pointer {
+	accel_profile flat
+	pointer_accel -0.4375
+}
+
+
