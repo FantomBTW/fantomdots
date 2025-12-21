@@ -1,5 +1,5 @@
 ###there all eye-candy/output confs such as wallpapers, swayfx features etc
-
+####Rem is WIP now
 #waybar
 exec waybar -s /home/fantom/.config/waybar/themes/rem
 
