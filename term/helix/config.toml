@@ -1,0 +1,25 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+true-color = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "│"
+
+[editor.statusline.mode]
+normal = "NORMAL"
+insert = "INSERT"
+select = "SELECT"
+
+
+[keys.insert]
+j = { j = "normal_mode", k = "normal_mode" }
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"

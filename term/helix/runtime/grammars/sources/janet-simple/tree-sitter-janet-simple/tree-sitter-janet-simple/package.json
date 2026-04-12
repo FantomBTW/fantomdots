@@ -1,0 +1,15 @@
+{
+  "name": "tree-sitter-janet-simple",
+  "version": "0.0.3",
+  "description": "A Janet grammar for tree-sitter",
+  "tree-sitter": [
+    {
+      "scope": "source.janet",
+      "file-types": [
+        "cgen",
+        "janet",
+        "jdn"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+workspace {
+ 	1 output "DP-1"
+ 	2 output "DP-1"
+ 	3 output "DP-1"
+ 	6 output "DP-1"
+ 	7 output "DP-1"
+ }
+
+workspace {
+	4 output "HDMI-A-2"
+	5 output "HDMI-A-2"
+	8 output "HDMI-A-2"
+	9 output "HDMI-A-2"
+	10 output "HDMI-A-2"
+}
