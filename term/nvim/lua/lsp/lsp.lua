@@ -4,12 +4,21 @@ vim.pack.add({
    {src = "https://github.com/mason-org/mason.nvim"},
    {src = "https://github.com/mason-org/mason-lspconfig.nvim"},
    -- autocomplete
-   -- {src = "https://github.com/"},
+   {src = "https://github.com/saghen/blink.cmp"},
 })
 
+-- lsp highlight
 require("mason").setup({})
 require("mason-lspconfig").setup({
    automatic_enable = {
+      "lua_ls",
+      "clangd",
+      "pyright",
+      "typescript-language-server",
+      "ts_ls",
+      "bash-language-server",
+   },
+   ensure_installed = {
       "lua_ls",
       "clangd",
       "pyright",
