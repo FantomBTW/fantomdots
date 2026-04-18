@@ -4,6 +4,14 @@
       "rev": "c573a15a62bd0bfd4006ee0849b24f5404395500",
       "src": "https://github.com/saghen/blink.cmp"
     },
+    "catppuccin": {
+      "rev": "426dbebe06b5c69fd846ceb17b42e12f890aedf1",
+      "src": "https://github.com/catppuccin/nvim"
+    },
+    "lexima.vim": {
+      "rev": "ab621e4756465c9d354fce88cff2bd1aa7887065",
+      "src": "https://github.com/cohama/lexima.vim"
+    },
     "lualine.nvim": {
       "rev": "a905eeebc4e63fdc48b5135d3bf8aea5618fb21c",
       "src": "https://github.com/nvim-lualine/lualine.nvim"
@@ -19,6 +27,14 @@
     "nvim-lspconfig": {
       "rev": "d10ce09e42bb0ca8600fd610c3bb58676e61208d",
       "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "nvim-treesitter": {
+      "rev": "4916d6592ede8c07973490d9322f187e07dfefac",
+      "src": "https://github.com/nvim-treesitter/nvim-treesitter"
+    },
+    "timed-highlight.nvim": {
+      "rev": "b0ddbee97641d817a35a4a5dc1679436b4dec955",
+      "src": "https://github.com/sahlte/timed-highlight.nvim"
     },
     "tokyonight.nvim": {
       "rev": "cdc07ac78467a233fd62c493de29a17e0cf2b2b6",
