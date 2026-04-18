@@ -1,0 +1,35 @@
+{
+	"layer": "top", 
+	"position": "top",
+	"margin-left": 12,
+	"margin-top": 5,
+	"margin-right": 12,
+	"height": 36,
+	"spacing": 4,
+	"exclusive": true,
+	"gtk-layer-shell": true,
+	"passthrough": false,
+	"fixed-center": true,
+	"include": [
+		"/etc/ximperdistro/hyprland/waybar/modules.json"
+	],
+	"modules-left": [
+		"image#menu",
+		//"hyprland/window",
+		"hyprland/language",
+		"custom/media",
+		"hyprland/submap",
+	],
+	"modules-center": [
+		"hyprland/workspaces",
+		"idle_inhibitor",
+	],
+	"modules-right": [
+		//"custom/clipboard",
+		"group/volume",
+		"backlight",
+		"battery",
+		"tray",
+		"group/notification",
+	]
+}
