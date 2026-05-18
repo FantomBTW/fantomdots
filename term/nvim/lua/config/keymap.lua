@@ -31,4 +31,4 @@ vim.keymap.set("n", "<leader>w", "<CMD>wincmd w<CR>")
 vim.keymap.set("n","<leader>s","<CMD>write<CR>")
 vim.keymap.set("n","<leader>q","<CMD>quit<CR>")
 
-
+vim.keymap.set("n","<leader>L","<CMD>lua vim.diagnostic.open_float()<CR>")
